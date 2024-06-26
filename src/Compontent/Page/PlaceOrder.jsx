@@ -194,7 +194,7 @@ export function PlaceOrder() {
 
 
                   <p className="text-start text-md-center">
-                    <strong>$17.99</strong>
+                    <strong>₹ 700.00</strong>
                   </p>
                 </MDBCol>
               </MDBRow>
@@ -240,7 +240,7 @@ export function PlaceOrder() {
 
 
                   <p className="text-start text-md-center">
-                    <strong>$17.99</strong>
+                    <strong>₹ 570.00</strong>
                   </p>
                 </MDBCol>
                 <hr className="my-4" />
@@ -249,14 +249,14 @@ export function PlaceOrder() {
                   <MDBTypography tag="h6" className="text-uppercase">
                     Total MRP
                   </MDBTypography>
-                  <MDBTypography tag="h6">€ 137.00</MDBTypography>
+                  <MDBTypography tag="h6">₹ 1,670.00</MDBTypography>
 
                 </div>
                 <div className="d-flex justify-content-between mb-2">
                   <MDBTypography tag="h6" className="text-uppercase">
                     Discount on MRP
                   </MDBTypography>
-                  <MDBTypography tag="h6">-17.00</MDBTypography>
+                  <MDBTypography tag="h6">-170.00</MDBTypography>
 
                 </div>
                 <div className="d-flex justify-content-between mb-2">
@@ -271,7 +271,7 @@ export function PlaceOrder() {
                   <MDBTypography tag="h5" className="text-uppercase">
                     Total Amount
                   </MDBTypography>
-                  <MDBTypography tag="h5">€ 120.00</MDBTypography>
+                  <MDBTypography tag="h5">₹  1,500.00</MDBTypography>
 
                 </div>
               </MDBRow>

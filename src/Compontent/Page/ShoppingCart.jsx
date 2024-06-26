@@ -1,3 +1,4 @@
+import { Stepper } from "@mui/material";
 import {
     MDBBtn,
     MDBCard,
@@ -13,10 +14,14 @@ import {
     } from "mdb-react-ui-kit";
     import React from "react";
 import { Link } from "react-router-dom";
+import HorizontalLinearAlternativeLabelStepper from "./HorizontalLinearAlternativeLabelStepper";
     
     export default function QuantityEdit() {
     return (
+      <>    
+
     <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
+    <HorizontalLinearAlternativeLabelStepper/>
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol size="12">
@@ -63,7 +68,7 @@ import { Link } from "react-router-dom";
                         </MDBCol>
                         <MDBCol md="3" lg="2" xl="2" className="text-end">
                           <MDBTypography tag="h6" className="mb-0">
-                            € 44.00
+                          ₹ 440.00
                           </MDBTypography>
                         </MDBCol>
                         <MDBCol md="1" lg="1" xl="1" className="text-end">
@@ -102,7 +107,7 @@ import { Link } from "react-router-dom";
                         </MDBCol>
                         <MDBCol md="3" lg="2" xl="2" className="text-end">
                           <MDBTypography tag="h6" className="mb-0">
-                            € 44.00
+                          ₹ 500.00
                           </MDBTypography>
                         </MDBCol>
                         <MDBCol md="1" lg="1" xl="1" className="text-end">
@@ -141,7 +146,7 @@ import { Link } from "react-router-dom";
                         </MDBCol>
                         <MDBCol md="3" lg="2" xl="2" className="text-end">
                           <MDBTypography tag="h6" className="mb-0">
-                            € 44.00
+                          ₹ 730.00
                           </MDBTypography>
                         </MDBCol>
                         <MDBCol md="1" lg="1" xl="1" className="text-end">
@@ -175,7 +180,7 @@ import { Link } from "react-router-dom";
                         <MDBTypography tag="h5" className="text-uppercase">
                           items 3
                         </MDBTypography>
-                        <MDBTypography tag="h5">€ 137.00</MDBTypography>
+                        <MDBTypography tag="h5">₹ 1,670.00</MDBTypography>
                       </div>
     
             
@@ -195,14 +200,14 @@ import { Link } from "react-router-dom";
                         <MDBTypography tag="h6" className="text-uppercase">
                           Total MRP
                         </MDBTypography>
-                        <MDBTypography tag="h6">€ 137.00</MDBTypography>
+                        <MDBTypography tag="h6">₹ 1,670.00</MDBTypography>
                         
                       </div>
                       <div className="d-flex justify-content-between mb-2">
                         <MDBTypography tag="h6" className="text-uppercase">
                           Discount on MRP
                         </MDBTypography>
-                        <MDBTypography tag="h6">-17.00</MDBTypography>
+                        <MDBTypography tag="h6">-170.00</MDBTypography>
                         
                       </div>
                       <div className="d-flex justify-content-between mb-2">
@@ -217,7 +222,7 @@ import { Link } from "react-router-dom";
                         <MDBTypography tag="h5" className="text-uppercase">
                           Total Amount
                         </MDBTypography>
-                        <MDBTypography tag="h5">€ 120.00</MDBTypography>
+                        <MDBTypography tag="h5">₹ 10.00</MDBTypography>
                         
                       </div>
     
@@ -233,5 +238,7 @@ import { Link } from "react-router-dom";
         </MDBRow>
       </MDBContainer>
     </section>
+    </>
+
     );
     }

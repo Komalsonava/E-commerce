@@ -17,7 +17,9 @@ import Products from './Compontent/Modules/Products';
 import Productdetail from './Compontent/Page/Productdetail';
 import ShoppingCart from './Compontent/Page/ShoppingCart';
 import { PlaceOrder } from './Compontent/Page/PlaceOrder';
-// import Payment from './Compontent/Page/Payment';
+
+import HorizontalLinearAlternativeLabelStepper from './Compontent/Page/HorizontalLinearAlternativeLabelStepper';
+import Payment from './Compontent/Page/Payment';
 
 
 function App() {
@@ -44,7 +46,8 @@ function App() {
            <Route path='/Products' element={<Products/>} />
            <Route path='/ShoppingCart' element={<ShoppingCart/>} />
            <Route path='/PlaceOrder' element={<PlaceOrder/>} />
-           {/* <Route path='/Payment' element={<Payment/>} /> */}
+           <Route path='/Payment' element={<Payment/>} />
+           <Route path='/HorizontalLinearAlternativeLabelStepper' element={<HorizontalLinearAlternativeLabelStepper/>} />
 
 
 

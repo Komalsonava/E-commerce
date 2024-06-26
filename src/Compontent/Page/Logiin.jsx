@@ -13,7 +13,7 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import Contact from './Contact';
 import { useAuth } from '../../context/AuthContext';
-
+import FacebookAuth from 'react-facebook-auth';
 // const App = () => { 
 //   const navigate=useNavigate();
 //   const [formData, setFormdata] = useState({
@@ -22,7 +22,7 @@ import { useAuth } from '../../context/AuthContext';
 //     thumbnail: "",
 //   });
 const Login = () => {
-  const {setIsAuthenticate } = useAuth();
+  // const {setIsAuthenticate } = useAuth();
   const navigate = useNavigate();
   const [formData, setFormdata] = useState({
     email:"",
@@ -54,43 +54,51 @@ const Login = () => {
   //   });
   //   };
 
-  const onFormsubmit = (ev) =>{
-    debugger;
-    ev.preventDefault();
-    console.log(formData);
-    if (formData.email && formData.password)
-      {
-        // const form = new FormData();
-        // form.append("title", formData.title);
-        // form.append("description", formData.description);
-        // form.append("thumbnail", formData.thumbnail);
+  // const onFormsubmit = (ev) =>{
+  //   debugger;
+  //   ev.preventDefault();
+  //   console.log(formData);
+  //   if (formData.email && formData.password)
+  //     {
+  //       // const form = new FormData();
+  //       // form.append("title", formData.title);
+  //       // form.append("description", formData.description);
+  //       // form.append("thumbnail", formData.thumbnail);
 
-        fetch("http://localhost:4001/login", {
-          method: "POST",
-          body: JSON.stringify(formData),
-          headers:{
-            "content-type" :"Application/json",
-          }
-        })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.user){
-            console.log(data);
-          navigate("/Wishlist");
-        }else{
-          alert(data.error)}
-        })
-        .catch((error) => 
-          console.log(error));
+  //       fetch("http://localhost:4001/login", {
+  //         method: "POST",
+  //         body: JSON.stringify(formData),
+  //         headers:{
+  //           "content-type" :"Application/json",
+  //         }
+  //       })
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         if (data.user){
+  //           console.log(data);
+  //         navigate("/Wishlist");
+  //       }else{
+  //         alert(data.error)}
+  //       })
+  //       .catch((error) => 
+  //         console.log(error));
 
-      }
+  //     }
       
-  }
+  // }
+ const authenticate = () => {
+  console.log(Response);
+ }
+ const MyFacebookButton = ({ onClick }) =>{
+  return(
+  <MDBIcon onClick={onClick} fab icon='facebook-f' size="lg"/>
+  )
+ }
 
   return (
     <>
      <MDBContainer fluid>
-     <form onSubmit={onFormsubmit}>
+     <form>
      <MDBRow className='d-flex justify-content-center align-items-center h-100'>
         <MDBCol col='12'>
 
@@ -107,6 +115,12 @@ const Login = () => {
              <MDBBtn outline className='mx-2 px-5' color='white' size='lg'>
                  Login
              </MDBBtn>
+             <FacebookAuth
+                appId="505500775147832"
+                callback={authenticate}
+                 component={MyFacebookButton}
+               />
+    <br/>
 
             <div className='d-flex flex-row mt-3 mb-5'>
               <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
