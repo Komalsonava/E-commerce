@@ -15,11 +15,11 @@ import {
   Card,
   CardContent,
 } from '@mui/material';
-import GPayIcon from '@mui/icons-material/Payment'; // Replace with the appropriate icon
-import CODIcon from '@mui/icons-material/LocalAtm'; // Replace with the appropriate icon
-import PhonePeIcon from '@mui/icons-material/PhoneAndroid'; // Replace with the appropriate icon
+import PaymentIcon from '@mui/icons-material/Payment';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
-const Payment = () => {
+const PaymentOptions= () => {
   const [paymentMethod, setPaymentMethod] = useState('googlePay');
   const [upiId, setUpiId] = useState('');
   const [selectedBank, setSelectedBank] = useState('@okhdfcbank');
@@ -58,7 +58,7 @@ const Payment = () => {
                     <Box component="span" sx={{ ml: 1, color: 'green' }}>
                       1 Offer
                     </Box>
-                    <GPayIcon sx={{ ml: 'auto', color: 'grey.500' }} />
+                    <PaymentIcon sx={{ ml: 'auto', color: 'grey.500' }} />
                   </Box>
                 }
               />
@@ -85,7 +85,7 @@ const Payment = () => {
                   <Typography variant="body2" color="textSecondary" sx={{ mt: 1, mb: 2 }}>
                     Cashback up to ₹250. On First RuPay Credit Card transactions of ₹500 and above. TCA
                   </Typography>
-                  <Button variant="contained" color="primary" fullWidth>
+                  <Button variant="contained" color="secondary" fullWidth sx={{ backgroundColor: '#ff4081' }}>
                     PAY NOW
                   </Button>
                 </Box>
@@ -100,7 +100,7 @@ const Payment = () => {
                 label={
                   <Box display="flex" alignItems="center">
                     <Typography>Cash on Delivery (Cash/UPI)</Typography>
-                    <CODIcon sx={{ ml: 'auto', color: 'grey.500' }} />
+                    <LocalAtmIcon sx={{ ml: 'auto', color: 'grey.500' }} />
                   </Box>
                 }
               />
@@ -124,10 +124,17 @@ const Payment = () => {
                 label={
                   <Box display="flex" alignItems="center">
                     <Typography>PhonePe</Typography>
-                    <PhonePeIcon sx={{ ml: 'auto', color: 'grey.500' }} />
+                    <PhoneAndroidIcon sx={{ ml: 'auto', color: 'grey.500' }} />
                   </Box>
                 }
               />
+              {paymentMethod === 'phonePe' && (
+                <Box sx={{ mt: 2 }}>
+                  <Button variant="contained" color="primary" fullWidth sx={{ backgroundColor: '#ff3366' }}>
+                    PAY NOW
+                  </Button>
+                </Box>
+              )}
             </CardContent>
           </Card>
         </RadioGroup>
@@ -136,4 +143,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default PaymentOptions;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCol, MDBIcon, MDBInput, MDBRow, MDBTypography } from 'mdb-react-ui-kit';
-
+import { Box } from '@mui/material';
 
 function Contact() {
   return (
@@ -58,6 +58,9 @@ function Contact() {
               </MDBCol>
             </MDBRow>
           </div>
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '70vh' }}>
+         <iframe width="80%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Computer%20Science%20Department%20and%20MCA%20BCA%20department+(Artisan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+         </Box>
         </>
      
   );

@@ -617,7 +617,10 @@ color: #282c34;
   }
   }
 
-
+.map{
+  margin: 0 auto;
+  justify-content: center;
+}
 
 
 

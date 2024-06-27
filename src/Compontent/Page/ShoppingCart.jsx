@@ -14,6 +14,7 @@ import {
     } from "mdb-react-ui-kit";
     import React from "react";
 import { Link } from "react-router-dom";
+import HorizontalLinearAlternativeLabelStepper from "./HorizontalLinearAlternativeLabelStepper";
 
     
     export default function QuantityEdit() {
@@ -21,7 +22,7 @@ import { Link } from "react-router-dom";
       <>    
 
     <section className="h-100 h-custom" style={{ backgroundColor: "#eee" }}>
-    
+    <HorizontalLinearAlternativeLabelStepper/>
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol size="12">

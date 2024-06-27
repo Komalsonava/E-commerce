@@ -120,7 +120,7 @@ const Login = () => {
                 callback={authenticate}
                  component={MyFacebookButton}
                />
-    <br/>
+    
 
             <div className='d-flex flex-row mt-3 mb-5'>
               <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
