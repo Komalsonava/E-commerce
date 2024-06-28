@@ -18,6 +18,7 @@ import {
 import PaymentIcon from '@mui/icons-material/Payment';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import { MDBCard, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 
 const PaymentOptions= () => {
   const [paymentMethod, setPaymentMethod] = useState('googlePay');
@@ -36,9 +37,15 @@ const PaymentOptions= () => {
   };
 
   return (
+    <section className="h-300 h-custom" style={{ backgroundColor: "#eee" }}>
+            <MDBContainer className="py-3 h-300">
+            <MDBRow className="justify-content-center align-items-center h-300 --bs-gutter-x: -8.5rem;">
+            <MDBCard className="card-registration card-registration-1" style={{ borderRadius: "15px" }}>
     <Box sx={{ maxWidth: 400, margin: '0 auto', p: 2 }}>
       <Typography variant="h6" sx={{ mb: 2 }}>
+     
         Recommended Payment Options
+      
       </Typography>
       <FormControl component="fieldset">
         <RadioGroup
@@ -117,7 +124,7 @@ const PaymentOptions= () => {
             </CardContent>
           </Card>
           <Card variant="outlined" sx={{ mb: 2 }}>
-            <CardContent>
+            <CardContent> 
               <FormControlLabel
                 value="phonePe"
                 control={<Radio />}
@@ -140,6 +147,10 @@ const PaymentOptions= () => {
         </RadioGroup>
       </FormControl>
     </Box>
+    </MDBCard>
+    </MDBRow>
+    </MDBContainer>
+    </section>
   );
 };
 

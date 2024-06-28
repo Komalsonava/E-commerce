@@ -12,7 +12,7 @@ import {
   from 'mdb-react-ui-kit';
 import { Link, useNavigate } from 'react-router-dom';
 import Contact from './Contact';
-import { useAuth } from '../../context/AuthContext';
+// import { useAuth } from '../../context/AuthContext';
 import FacebookAuth from 'react-facebook-auth';
 // const App = () => { 
 //   const navigate=useNavigate();
@@ -35,57 +35,57 @@ const Login = () => {
       [name]: value,
     });
     };
-  // const handlthumbnail = (ev) => {
-  //   if (ev.target.files) {
-  //     setFormdata({
-  //       ...formData,
-  //       thumbnail: ev.target.files[0],
-  //       });
-  //   }
-  // };
+  const handlthumbnail = (ev) => {
+    if (ev.target.files) {
+      setFormdata({
+        ...formData,
+        thumbnail: ev.target.files[0],
+        });
+    }
+  };
 
  
 
-  // const handleInputChange = (ev) => {
-  //   const {name, value} =ev.target;
-  //    setFormdata({
-  //     ...formData,
-  //     [name]: value,
-  //   });
-  //   };
+  const handleInputChange = (ev) => {
+    const {name, value} =ev.target;
+     setFormdata({
+      ...formData,
+      [name]: value,
+    });
+    };
 
-  // const onFormsubmit = (ev) =>{
-  //   debugger;
-  //   ev.preventDefault();
-  //   console.log(formData);
-  //   if (formData.email && formData.password)
-  //     {
-  //       // const form = new FormData();
-  //       // form.append("title", formData.title);
-  //       // form.append("description", formData.description);
-  //       // form.append("thumbnail", formData.thumbnail);
+  const onformsubmit = (ev) =>{
+    debugger;
+    ev.preventDefault();
+    console.log(formData);
+    if (formData.email && formData.password)
+      {
+        const form = new FormData();
+        form.append("title", formData.title);
+        form.append("description", formData.description);
+        form.append("thumbnail", formData.thumbnail);
 
-  //       fetch("http://localhost:4001/login", {
-  //         method: "POST",
-  //         body: JSON.stringify(formData),
-  //         headers:{
-  //           "content-type" :"Application/json",
-  //         }
-  //       })
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         if (data.user){
-  //           console.log(data);
-  //         navigate("/Wishlist");
-  //       }else{
-  //         alert(data.error)}
-  //       })
-  //       .catch((error) => 
-  //         console.log(error));
+        fetch("http://localhost:4001/login", {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers:{
+            "content-type" :"Application/json",
+          }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.user){
+            console.log(data);
+          navigate("/Wishlist");
+        }else{
+          alert(data.error)}
+        })
+        .catch((error) => 
+          console.log(error));
 
-  //     }
+      }
       
-  // }
+  }
  const authenticate = () => {
   console.log(Response);
  }
@@ -147,7 +147,7 @@ const Login = () => {
        </MDBRow>
 </form>
      </MDBContainer>
-{/* 
+
     <div className='cat-form'>
       <form onSubmit={onformsubmit}>
         <div>
@@ -166,7 +166,7 @@ const Login = () => {
           <input type='submit' value="save"/>
         </div>
       </form>
-    </div> */}
+    </div>
     <div>
       <Contact/>
    </div>
