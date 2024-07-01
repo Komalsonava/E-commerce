@@ -21,6 +21,7 @@ import { PlaceOrder } from './Compontent/Page/PlaceOrder';
 import HorizontalLinearAlternativeLabelStepper from './Compontent/Page/HorizontalLinearAlternativeLabelStepper';
 import Payment from './Compontent/Page/Payment';
 
+import Head from './Compontent/Page/Head';
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
            <Route path='/PlaceOrder' element={<PlaceOrder/>} />
            <Route path='/Payment' element={<Payment/>} />
            <Route path='/HorizontalLinearAlternativeLabelStepper' element={<HorizontalLinearAlternativeLabelStepper/>} />
-
+           <Route path='/Head' element={<Head/>} />
 
 
 

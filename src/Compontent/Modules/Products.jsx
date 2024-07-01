@@ -79,7 +79,7 @@ const Products = () => {
             <Card.Img variant="top" src={process.env.PUBLIC_URL + elem.image} />
             </div>
             <Card.Body>
-              <Card.Title>{elem.Product_name}</Card.Title>
+              <Card.Title style={{}}>{elem.Product_name}</Card.Title>
               <Card.Text>${elem.price}</Card.Text>
               <Link to="/Productdetail" className="btn mx-4" variant="primary">Buy Now</Link>
               <Link to="/ShoppingCart" className="btn mx-4" variant="primary">Add to Cart</Link>
