@@ -180,7 +180,8 @@ export const Header = () => {
                   <b>Category</b>
                 </Nav.Link>
               </div>
-              {showDropdown && (
+              {
+              showDropdown && (
                 <div className="navbar-dropdown"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={toggleDropdown}>
                   <div className="dropdown-section">
                     <h4>Sarees</h4>
