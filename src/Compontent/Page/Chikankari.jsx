@@ -17,7 +17,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                  <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck1.png"} />
+                  <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck1-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -30,7 +30,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck2.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck2-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -43,7 +43,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck3.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck3-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -56,7 +56,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck4.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck4-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -69,7 +69,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck5.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck5-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -82,7 +82,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck6.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck6-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -95,7 +95,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck7.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck7-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -108,7 +108,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck8.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck8-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -121,7 +121,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck9.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck9-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -134,7 +134,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck10.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck10-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -147,7 +147,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck11.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck11-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -160,7 +160,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck12.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck12-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -173,7 +173,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck13.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck13-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>
@@ -186,7 +186,7 @@ const Chikankari = () => {
             <MDBCol>
               <MDBCard>
                 <div className='bg-image hover-zoom'>
-                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck14.png"} />
+                <img className='w-100' alt='First'src={process.env.PUBLIC_URL + "/hand/chikankari/ck14-1.png"} />
                 </div>
                 <MDBCardBody>
                   <MDBCardText style={{ textAlign: "center" }}>

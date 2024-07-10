@@ -22,6 +22,8 @@ import HorizontalLinearAlternativeLabelStepper from './Compontent/Page/Horizonta
 import Payment from './Compontent/Page/Payment';
 
 import Head from './Compontent/Page/Head';
+import Profile from './Compontent/Page/Profile';
+
 
 function App() {
   return (
@@ -50,6 +52,11 @@ function App() {
            <Route path='/Payment' element={<Payment/>} />
            <Route path='/HorizontalLinearAlternativeLabelStepper' element={<HorizontalLinearAlternativeLabelStepper/>} />
            <Route path='/Head' element={<Head/>} />
+           <Route path='/Profile' element={<Profile/>} />
+           
+
+          
+          
 
 
 

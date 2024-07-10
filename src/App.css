@@ -562,4 +562,56 @@ color: #282c34;
 
 
 
+
+/* ProfileAccountPage.css */
+.profile-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+h6 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form .form-control {
+  margin-bottom: 10px;
+}
+
+form .btn-outline-secondary {
+  width: 100%;
+}
+
+form .btn-danger {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
   
